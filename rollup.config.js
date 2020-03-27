@@ -22,8 +22,8 @@ export default {
     }),
     commonjs(),
     local && serve({
-      open: true,
-      verbose: true,
+      open: false,
+      verbose: false,
       contentBase: ['public', 'dist'],
       host: 'localhost',
       port: 8080,

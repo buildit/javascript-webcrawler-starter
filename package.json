@@ -9,8 +9,9 @@
     "clean": "rimraf dist",
     "build": "rollup -c",
     "serve": "LOCAL=y rollup -c",
+    "serve:watch": "LOCAL=y rollup -c --watch",
     "test": "jest --runInBand",
-    "test:integration": ""
+    "test:e2e": "jest --runInBand -c e2e/jest.config.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

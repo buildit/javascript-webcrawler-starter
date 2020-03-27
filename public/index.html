@@ -6,52 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Buildit Javascript Webcrawler Exercise</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <style>.progress{border-radius:0;}</style>
 </head>
 <body>
-
-  <div class="section">
-    <div class="container">
-
-      <div class="field is-grouped">
-        <div class="control is-expanded">
-          <input id="crawler-input" class="input is-large" type="text" placeholder="https://example.com">
+  <section class="hero is-fullheight is-light is-bold">
+    <div class="hero-body">
+      <form class="container" method="post" action="#" name="crawler">
+        <div class="field is-grouped">
+          <div class="control is-expanded">
+            <input name="domain" class="input is-hovered is-large" type="text" value="" placeholder="https://example.com">
+          </div>
+          <div class="control">
+            <button name="submit" class="button is-info is-large">Crawl It!</a>
+          </div>
         </div>
-        <div class="control">
-          <button id="crawler-submit" class="button is-info is-large">Crawl It!</a>
-        </div>
-      </div>
-
-      <div class="field">
-        <progress class="progress is-success is-large" value="60" max="100">60%</progress>
-      </div>
-
-      <pre><code id="crawler-output" class="language-json" data-lang="json">{
-  "uri": "https://test.com/about.html",
-  "internalLinks": [
-      "https://test.com/",
-      "https://test.com/about.html#",
-      "https://test.com/search.html",
-      "https://test.com/categories.html",
-      "https://test.com/articles/2015-04-23-forum/",
-      "https://test.com/feed.xml"
-  ],
-  "externalLinks": [
-      "https://groups.google.com/forum/#!forum/test",
-      "https://test.tumblr.com/",
-      "https://www.agilementoring.com/",
-      "mailto:test@test.com",
-      "https://github.com/test",
-      "https://twitter.com/test"
-  ],
-  "images": [
-      "/assets/test.svg"
-  ]
-}</code></pre>
-
+      </form>
     </div>
-  </div>
-
+  </section>
   <script src="/bundle.js"></script>
 </body>
 </html>
