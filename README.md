@@ -84,31 +84,31 @@ $ yarn
 Once running, you can point your browser at http://localhost:8080.
 
 - Run with the command
-    ```bash
-    $ yarn serve
-    ```
+```bash
+$ yarn serve
+```
 
 - Run and watch for changes
-    ```bash
-    $ yarn serve:watch
-    ```
+```bash
+$ yarn serve:watch
+```
 
 - Run unit tests for suites under `src`
-    ```bash
-    $ yarn test
-    ```
+```bash
+$ yarn test
+```
 
 - Run end-to-end tests for suites under `e2e`
-    ```bash
-    $ yarn test:e2e
-    ```
+```bash
+$ yarn test:e2e
+```
 
 - Clean up `dist`
-    ```bash
-    $ yarn clean
-    ```
+```bash
+$ yarn clean
+```
 
 - Build `dist` manually (`yarn serve` + `yarn serve:watch` build automatically)
-    ```bash
-    $ yarn build
-    ```
+```bash
+$ yarn build
+```
