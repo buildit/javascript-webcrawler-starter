@@ -25,6 +25,7 @@ The crawler should be limited to one domain.
 Given a starting URL – say https://test.com - it should visit all pages within the domain, but not follow the links to external sites such as Google or Twitter.
 
 For each page that is crawled, you must perform the following:
+
 * Embed the page content in a container element
 * Add a tab element that, when clicked, will show the previously embedded content
 * Embed a JSON object as described in `src/model.js` in a `pre` element
