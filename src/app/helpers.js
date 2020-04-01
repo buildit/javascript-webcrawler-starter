@@ -45,6 +45,9 @@ const handleSubmit = crawler => async (event) => {
 /**
  * Do something with result data returned by your crawler function
  * 
+ * Again, this is a dummy implementation that should give you a broad
+ * idea of what is required to get the crawl results into the UI
+ * 
  * @param {*} data 
  */
 export const setResults = (data) => {
