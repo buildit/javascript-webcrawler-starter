@@ -6,21 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Buildit Javascript Webcrawler Exercise</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <style>
+      .tab-content{display:none;}
+      .tab-content:target{display:block;}
+    </style>
 </head>
 <body>
-  <section class="hero is-fullheight is-light is-bold">
-    <div class="hero-body">
-      <form class="container" method="post" action="#" name="crawler">
-        <div class="field is-grouped">
-          <div class="control is-expanded">
-            <input name="domain" class="input is-hovered is-large" type="text" value="" placeholder="https://example.com">
-          </div>
-          <div class="control">
-            <button name="submit" class="button is-info is-large">Crawl It!</a>
-          </div>
+  <section class="section">
+    
+    <form class="container" method="post" action="#" name="crawler">
+
+      <div class="field is-grouped">
+        <div class="control is-expanded">
+          <input name="domain" class="input is-hovered is-large" type="text" value="" placeholder="https://example.com">
         </div>
-      </form>
-    </div>
+
+        <div class="control">
+          <button name="submit" class="button is-info is-large">Crawl It!</a>
+        </div>
+      </div>
+
+      <div class="tabs is-toggle">
+        <ul>
+          <li class="is-active">
+            <a href="#output">JSON</a>
+          </li>
+          <li>
+            <a href="#page1">http://test.com/about.html</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box tab-content" id="page1">EXAMPLE PAGE MARKUP GOES HERE</div>
+
+    </form>
+  
   </section>
   <script src="/bundle.js"></script>
 </body>
