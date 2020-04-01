@@ -18,47 +18,25 @@ Your solution will form the basis for discussion in subsequent interviews.
 ## What you need to do
 Please write a simple, web crawler in Javascript that works in the browser.
 
+As a starting point, a dummy implementation exists in `src/crawler/crawl-domain.js`.
+
 The crawler should be limited to one domain.
 
 Given a starting URL – say https://test.com - it should visit all pages within the domain, but not follow the links to external sites such as Google or Twitter.
 
-Your crawler should output JSON in the following format:
-```json
-{
-    "uri": "https://test.com/about.html",
-    "internalLinks": [
-        "https://test.com/",
-        "https://test.com/about.html#",
-        "https://test.com/search.html",
-        "https://test.com/categories.html",
-        "https://test.com/articles/2015-04-23-forum/",
-        "https://test.com/feed.xml"
-    ],
-    "externalLinks": [
-        "https://groups.google.com/forum/#!forum/test",
-        "https://test.tumblr.com/",
-        "https://www.agilementoring.com/",
-        "mailto:test@test.com",
-        "https://github.com/test",
-        "https://twitter.com/test"
-    ],
-    "images": [
-        "/assets/test.svg"
-    ]
-}
-```
+For each page that is crawled, you must perform the following:
+* Embed the page content in a container element
+* Add a tab element that, when clicked, will show the previously embedded content
+* Embed a JSON object as described in `src/model.js` in a `pre` element
 
-Please update this README.md describing your thought process and the tradeoffs made. Also, detail anything further that you would like to achieve with more time.
-
-Once done, please make your solution available on Github and forward the link.
+In addition to the crawler, you must write helper/boilerplate functionality as described/stubbed within `src/app/helpers.js`
 
 Where possible please include your commit history to provide visibility of your thinking and working practice.
 
 ## What we give you
 We know you're busy - you probably have other interviews and exercises from many other potential employers, and most likely you're also still working hard for your current employer.
 
-To that end, this exercise is a complete MVP that reduces your required contribution to that of simply writing the real, live
-crawler code.
+To that end, this exercise gives you _most_ of what you need in terms of a working UI. For reference, we're using a plain copy of [Bulma](https://bulma.io/) for styling.
 
 Having said that, you are free to modify the code as you see fit. However, please ensure that the end-to-end test suite `e2e/webcrawler.test.js` continues to work.
 

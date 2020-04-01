@@ -11,7 +11,8 @@
     "serve": "LOCAL=y rollup -c",
     "serve:watch": "LOCAL=y rollup -c --watch",
     "test": "jest --runInBand",
-    "test:e2e": "jest --runInBand -c e2e/jest.config.js"
+    "test:e2e": "jest --runInBand -c e2e/jest.config.js",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -33,8 +34,5 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-serve": "^1.0.1"
-  },
-  "dependencies": {
-    "bulma": "^0.8.1"
   }
 }
