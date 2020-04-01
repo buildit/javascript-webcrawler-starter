@@ -29,7 +29,9 @@ For each page that is crawled, you must perform the following:
 * Add a tab element that, when clicked, will show the previously embedded content
 * Embed a JSON object as described in `src/model.js` in a `pre` element
 
-In addition to the crawler, you must write helper/boilerplate functionality as described/stubbed within `src/app/helpers.js`
+In addition to the crawler, you must write helper/boilerplate functionality as described/stubbed within `src/app/helpers.js`.
+
+Your code must include unit tests.
 
 Where possible please include your commit history to provide visibility of your thinking and working practice.
 
