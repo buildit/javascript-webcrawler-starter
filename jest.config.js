@@ -1,16 +1,19 @@
 module.exports = {
-  clearMocks: true,
-  collectCoverage: false,
+  coverageDirectory: 'test-reports/coverage',
   collectCoverageFrom: [
     '!**/node_modules/**',
     '!**/index.js',
     'src/**/*.js',
   ],
-  coverageDirectory: 'coverage',
-  reporters: ['default'],
+  reporters: [
+    'default',
+    ['jest-junit', {
+      outputDirectory: 'test-reports',
+      outputName: 'unit.junit.xml',
+    }],
+  ],
   rootDir: process.cwd(),
   roots: [
     '<rootDir>/src',
   ],
-  verbose: true,
 }
