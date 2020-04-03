@@ -10,7 +10,7 @@ pipelines:
           - yarn install
           - yarn lint
           - yarn test:ci
-          - yarn test:ci:e2e
+          - TEST_DOMAIN=$TEST_DOMAIN yarn test:ci:e2e
 
 definitions:
   caches:

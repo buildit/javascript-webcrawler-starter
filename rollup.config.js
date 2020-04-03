@@ -26,7 +26,7 @@ export default {
       verbose: false,
       contentBase: ['public', 'dist'],
       host: 'localhost',
-      port: 8080,
+      port: 9000,
     }),
   ],
 }
