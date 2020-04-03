@@ -27,11 +27,6 @@ export default {
       contentBase: ['public', 'dist'],
       host: 'localhost',
       port: 8080,
-      // https: {
-      //   key: readFileSync('/path/to/server.key'),
-      //   cert: readFileSync('/path/to/server.crt'),
-      //   ca: readFileSync('/path/to/ca.pem'),
-      // },
     }),
   ],
 }
